@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Blog</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="banner-superior">
+    <img src="img/banner.png" alt="Bienvenido.">
+    </header>
+    
+    <main>
+        <div id="seccion-izquierda">
+            <h3>Todos los articulos</h3>
+            <div id="blogs"></div> 
+        </div>
+
+        <div id="seccion-derecha">
+            <a class="primer-link" href="">Ver perfil</a>
+            <a class="link" href="">Crear publicacion</a>
+            <a class="link" href="">Editar publicacion</a>
+            <a class="link" href="">Borrar publicacion</a>
+            <a class="link" href="">Cerrar sesión</a>
+            
+            
+        </div>
+    </main>
+
+    <footer>
+        <p>Henry González 5090-23-19365</p>
+    </footer>
+
+    
+    <script src="index_script.js"></script> 
+    <!-- Pop-up de error 500 -->
+    <div id="popup-error" class="popup-overlay">
+        <div class="popup-contenido">
+            <h3>Error 500</h3>
+            <p id="mensaje-error">No se pudo conectar con el servidor.</p>
+            <button onclick="cerrarPopup()">Cerrar</button>
+        </div>
+    </div>
+</body>
+</html>

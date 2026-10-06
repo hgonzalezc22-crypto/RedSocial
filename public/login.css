@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(172, 207, 255);
+    font-family: sans-serif; /* Sin fuente especial, usa la estándar del navegador */
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.contenedor {
+    text-align: center;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+#link_registro {
+    font-size: 15px;
+}
