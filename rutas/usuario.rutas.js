@@ -1,14 +1,12 @@
 const express = require("express");
 const router = express.Router();
+const authMiddle = require("../middleware/auth"); 
 
-//CREAR ARTICULO-----------------------------------------------------
-
-// Importamos el controlador
+//Rutas usuariosx
 const UsuarioController = require("../controladores/usuarios.controlador");
-
-//Rutas
 router.post("/usuario-crear", UsuarioController.crear_normal);
-router.post("/usuario-buscar", UsuarioController.buscarUno);
+//router.post("/usuario-buscar", UsuarioController.buscarUno);
+router.post("/usuario-login", UsuarioController.login);
+router.get("/usuario-perfil", authMiddle.auth, UsuarioController.perfil); //protegida
 
-//Exportamos el enrutador para registrarlo en index.js
 module.exports = router;

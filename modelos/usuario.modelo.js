@@ -25,7 +25,7 @@ const UsuarioSchema = Schema({
     },
     pfpUrl: {
       type: String,
-      required: false
+      default: 'pfp_default.png'
     },
     es_mod: { 
       type: Boolean, 

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+
+    <div id="contenedor-principal">
+        <!-- Enlace de regreso -->
+        <a href="index.html" id="link-inicio">Volver a inicio</a>
+
+        <!-- Tarjeta principal del perfil -->
+        <div id="tarjeta-perfil">
+            
+            <!-- Sección izquierda: Avatar y Rol -->
+            <div id="perfil-izquierda">
+                <div id="avatar-circulo"></div>
+                <p id="rol-texto">usuario/moderador</p>
+            </div>
+
+            <!-- Sección derecha: Datos del usuario -->
+            <div id="perfil-derecha">
+                <p id="username">nombre.de.usuario</p>
+                <h1 id="nombre-real">Nombre Real</h1>
+                <p id="biografia">
+                    Donec hendrerit auctor est, quis iaculis mi tempus at. 
+                    Nullam lobortis massa in eros lacinia rutrum. Vivamus 
+                    aliquam scelerisque tortor, ac tincidunt leo. Etiam 
+                    egestas nisl libero, non tincidunt massa mollis vel. 
+                    Aenean vestibulum, lacus ut gravida auctor, libero.
+                </p>
+                <p id="fecha-ingreso">Se unió en: 02-12-2023</p>
+            </div>
+
+        </div>
+
+        <!-- Sección del selector desplegable-->
+        <div id="seccion-filtros">
+            <label for="filtro-publicaciones">Ver</label>
+            <select id="filtro-publicaciones">
+                <option value="publicaciones">publicaciones</option>
+                <option value="comentarios">comentarios</option>
+            </select>
+        </div>
+
+        <!-- Sección inferior para listar el contenido-->
+        <div id="seccion-listado">
+        </div>
+    </div>
+    <script src="perfil.js"></script>
+</body>
+</html>

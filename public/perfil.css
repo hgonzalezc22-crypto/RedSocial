@@ -1,0 +1,111 @@
+/* Estilos base (tomados de tu referencia) */
+body {
+    background-color: rgb(172, 207, 255);
+    margin: 0;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+/* Contenedor para centrar el contenido y mantener el ancho */
+#contenedor-principal {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto; 
+    box-sizing: border-box;
+}
+
+#link-inicio {
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* Diseño de la tarjeta inspirado en tu #blogs article */
+#tarjeta-perfil {
+    background-color: white;
+    border: 1px solid black; /* Borde grueso como en la imagen */
+    padding: 20px;
+    display: flex; /* Flexbox para poner izquierda y derecha lado a lado */
+    box-sizing: border-box;
+}
+
+/* Columna del círculo */
+#perfil-izquierda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    padding-right: 20px;
+}
+
+#avatar-circulo {
+    width: 120px;
+    height: 120px;
+    border: 1px solid black;
+    border-radius: 50%; /* Hace que el div sea circular */
+    margin-bottom: 10px;
+}
+
+#rol-texto {
+    margin-top: 0;
+    text-align: center;
+}
+
+/* Columna de la información de texto */
+#perfil-derecha {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Eliminar márgenes superiores como en tu CSS original */
+#perfil-derecha h1, 
+#perfil-derecha p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#username {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+#nombre-real {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+#biografia {
+    line-height: 1.4;
+}
+
+#fecha-ingreso {
+    color:rgb(126, 126, 126);
+    padding-top: 25px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+/* Estilos para el Dropdown y el texto rojo inferior */
+#seccion-filtros {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 35px;
+}
+
+#filtro-publicaciones {
+    border: 1px solid black;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#seccion-listado {
+    margin-top: 40px;
+    text-align: center;
+}
+

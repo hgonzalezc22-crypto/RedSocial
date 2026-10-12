@@ -3,7 +3,7 @@ const { conexion } = require("./basededatos/conexion");
 const express = require("express");
 const cors = require("cors");
 const path = require("path"); //para usar dirname y poder servir el front-end
-
+require('dotenv').config(); //se carga el .env para poder usarlo en los demas modulos
 //Mensaje inicial de arranque
 console.log("Iniciando API Node.js...");
 
